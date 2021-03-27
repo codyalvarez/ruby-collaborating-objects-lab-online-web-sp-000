@@ -31,7 +31,7 @@ class Song
 
   def artist_name(name)
     artist_name = name.to_s
-    song = Artist.find_or_create_by_name
+    song = Artist.find_or_create_by_name(name)
     artist_name.song
     song
     # self.find_or_create_by_name(name)
