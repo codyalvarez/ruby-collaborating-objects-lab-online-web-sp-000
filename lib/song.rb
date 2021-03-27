@@ -30,7 +30,7 @@ class Song
   end
 
   def artist_name=(name)
-    @name = name
+    self.find_or_create_by_name
   end
 
 
